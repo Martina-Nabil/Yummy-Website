@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+</div>
+
+
+
+<nav class="">
+    <div class="d-flex align-items-start justify-content-between flex-column h-100 py-3 ps-3">
+        <ul class="ps-0">
+            <li class="py-2" onclick="showSearchInputs()"><a href="#">Search</a></li>
+            <li class="py-2" onclick="getCategories()"><a href="#">Categories</a></li>
+            <li class="py-2" onclick="getArea()" ><a href="#">Area</a></li>
+            <li class="py-2" onclick="getIngredients()"><a href="#">Ingrdients</a></li>
+            <li class="py-2" onclick="showContacts()"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="social--links">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-solid fa-globe"></i></span>
+            <p class="py-1">Copyright Â© 2019 All Rights
+                Reserved.</p>
+        </div>
+        
+    </div>
+    
+ 
+    <div class=" bg-white py-4 px-2 nav-layer">
+        <div class="d-flex align-items-center justify-content-between flex-column h-100 ">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="" class="w-100">
+            </div>
+            <div class="nav-icon">
+                <span class="menu-icon"><i class="fa-solid fa-bars"></i></span> 
+                <span class="xmark-icon"><i class="fa-solid fa-xmark"></i></span> 
+
+                
+            </div>
+            <div class="social-links d-flex align-items-center justify-content-center flex-column text-black">
+                <span><i class="fa-solid fa-globe"></i></span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+        </div>
+    </div> 
+</nav>
+
+
+<div class="container w-75" id="searchContainer">
+
+</div>
+
+
+<section class="home container pt-5">
+
+    <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="row g-4" id="rowData">
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
